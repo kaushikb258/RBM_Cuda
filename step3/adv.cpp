@@ -285,7 +285,7 @@ void advance(double *q, double *Lin, double *PTF, int *pvector, int *iloc, int *
   
    for (l=0; l<ndeim; l++)
    {
-    k = pvector[l]/4;
+    k = iloc[l] + jloc[l]*imax;
 
     CH2 = rho*YH2[k]/2.0;
     CO2 = rho*YO2[k]/32.0;
